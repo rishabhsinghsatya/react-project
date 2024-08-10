@@ -1,0 +1,125 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #000;
+  color: white;
+}
+
+.App {
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+h1 {
+  color: #fff;
+}
+
+.contribution-graph {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 6px;
+  position: relative;
+}
+
+.month-labels {
+  /* display: grid;
+    grid-template-columns: repeat(52, 12px); */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.35rem;
+  margin-top: 10px;
+  /* margin-left: 85px; */
+}
+
+.month-label {
+  text-align: center;
+  font-size: 12px;
+  color: #fff;
+}
+
+.week {
+  display: flex;
+  flex-direction: column;
+  margin-right: 3px;
+}
+
+.day {
+  width: 10px;
+  height: 10px;
+  margin-bottom: 2px;
+  border-radius: 2px;
+  transition: background-color 0.3s ease;
+  position: relative;
+  
+}
+
+.day:hover {
+  transform: scale(1.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+}
+
+.tooltip {
+  position: fixed;
+  padding: 5px;
+  background-color: #333;
+  color: #fff;
+  border-radius: 3px;
+  font-size: 12px;
+  white-space: pre;
+  transform: translate(-50%, -100%);
+  pointer-events: none;
+  z-index: 1000;
+}
+
+.calendar-task-container {
+  margin-top: 40px;
+  gap: 5rem;
+  display: flex;
+  /* flex-direction: column; */
+  align-items: top;
+  justify-content: flex-start;
+}
+
+.calendar {
+  margin-bottom: 20px;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.task-form input {
+  padding: 8px;
+  margin-bottom: 10px;
+  width: 200px;
+}
+
+.task-form button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.task-form button:hover {
+  background-color: #0056b3;
+}
+.header {
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 5px;
+  justify-content: center;
+  align-items: center;
+  min-width: 45vw;
+}
